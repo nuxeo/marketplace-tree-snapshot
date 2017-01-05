@@ -1,0 +1,26 @@
+<!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
+<package type="addon" name="nuxeo-tree-snapshot" version="@VERSION@">
+  <title>Nuxeo Tree Snapshot</title>
+  <description>
+    <p>The Nuxeo Tree Snapshot addon adds the ability to version folder-trees with their documents.</p>
+  </description>
+  <home-page>https://github.com/nuxeo/nuxeo-tree-snapshot</home-page>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <!-- <hotreload-support>false</hotreload-support> -->
+  <!-- <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance> -->
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>production_ready</production-state>
+  <supported>true</supported>
+  <platforms>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-*</platform>
+  </platforms>
+  <optional-dependencies>
+    <package>nuxeo-jsf-ui</package>
+  </optional-dependencies>
+  <license>LGPL</license>
+  <license-url>http://www.gnu.org/licenses/lgpl.html</license-url>
+  <visibility>PUBLIC</visibility>
+</package>
